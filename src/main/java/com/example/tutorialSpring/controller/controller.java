@@ -44,7 +44,6 @@ public class controller {
 	public String editTrabajador(@PathVariable long id, @RequestBody Trabajador trabajadorEditado) {
 		Trabajador trabajadorEncontrado = trabajadorRepo.findById(id).get();
 
-		trabajadorEncontrado.setId(trabajadorEditado.getId());
 		trabajadorEncontrado.setNombre(trabajadorEditado.getNombre());
 		trabajadorEncontrado.setApellido(trabajadorEditado.getApellido());
 		trabajadorEncontrado.setTelefono(trabajadorEditado.getTelefono());
