@@ -51,7 +51,7 @@ public class controller {
 		
 		trabajadorRepo.save(trabajadorEncontrado);
 
-		return "Trabajor editado";
+		return "El trabjador fue editado";
 	}
 	
 	
